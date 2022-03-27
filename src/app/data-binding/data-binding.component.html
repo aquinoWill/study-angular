@@ -2,6 +2,12 @@
   <h3>Propety binding</h3>
   <article>
     <p>Olá {{ name }}</p>
-
   </article>
 </section>
+
+ <app-courses [course]="courseName"></app-courses>
+
+ <app-counter
+  [totalCounte]="10"
+  (changeValue)="onChageValue($event)"
+></app-counter>

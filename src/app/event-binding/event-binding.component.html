@@ -1,0 +1,14 @@
+<section>
+  <h3>Event Binding</h3>
+  <article>
+    <button (click)="eventClick()" mat-raised-button color="primary">Primary</button>
+    <input type="text" name="name"
+      (keyup)="eventKeyUp($event)"
+      (blur)="handleEnter(inputData.value)"
+      (keyup.enter)="handleEnter(inputData.value)"
+      #inputData
+    />
+    <p>Value: {{ inputValue }}</p>
+    <p>Save value: {{ inputSalveValue }}</p>
+  </article>
+</section>`
