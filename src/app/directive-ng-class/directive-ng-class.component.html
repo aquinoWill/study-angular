@@ -1,0 +1,8 @@
+<p
+  class="text-blue"
+  [ngClass]="{
+    'text-blue': toogleClass,
+    'text-red': !toogleClass
+  }"
+  (click)="onClick()"
+>directive-ng-class works!</p>

@@ -1,0 +1,13 @@
+<p>directive-ng-style works!</p>
+<button
+  mat-raised-button
+  [ngStyle]="{
+    'backgroundColor': active ? 'blue' : 'red',
+    'color': active ? 'white' : 'yellow',
+    'fontWeight': active ? 'bold' : 'normal',
+    'fontSize': fontSize + 'px'
+  }"
+  (click)="onClickActive()"
+>
+  Button
+</button>
