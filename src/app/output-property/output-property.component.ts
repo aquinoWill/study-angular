@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, Input, OnInit, Output, EventEmitter, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-counter',
@@ -7,23 +7,23 @@ import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 })
 export class OutputPropertyComponent implements OnInit {
 
-  constructor() { }
+  @Output() changeValue = new EventEmitter;
+  @Input() totalCounte: number = 0
+  @ViewChild('fieldValue') inputField: ElementRef;
+
+  constructor() {}
 
   ngOnInit(): void {
   }
 
-  @Output()
-  changeValue = new EventEmitter;
-
-  @Input()
-  totalCounte: number = 0
-
   increment() {
+    this.inputField.nativeElement.value++;
     this.totalCounte++;
     this.changeValue.emit({newValue: this.totalCounte})
   }
 
   decrement() {
+    this.inputField.nativeElement.value--;
     this.totalCounte--;
     this.changeValue.emit({newValue: this.totalCounte})
   }

@@ -15,6 +15,7 @@ import { DataBindingComponent } from './data-binding/data-binding.component';
 import { EventBindingComponent } from './event-binding/event-binding.component';
 import { TwoWayDataBindingComponent } from './two-way-data-binding/two-way-data-binding.component';
 import { OutputPropertyComponent } from './output-property/output-property.component';
+import { LiveClycleComponent } from './live-clycle/live-clycle.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { OutputPropertyComponent } from './output-property/output-property.compo
     DataBindingComponent,
     EventBindingComponent,
     TwoWayDataBindingComponent,
-    OutputPropertyComponent
+    OutputPropertyComponent,
+    LiveClycleComponent
   ],
   imports: [
     BrowserModule,
