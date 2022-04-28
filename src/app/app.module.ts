@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import {MatIconModule} from '@angular/material/icon';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatButtonModule} from '@angular/material/button';
+import {MatCardModule} from '@angular/material/card';
 
 import {MyFormModule} from './my-form/my-form.module'
 import {InputPropertyModule} from './input-property/input-property.module'
@@ -16,6 +17,13 @@ import { EventBindingComponent } from './event-binding/event-binding.component';
 import { TwoWayDataBindingComponent } from './two-way-data-binding/two-way-data-binding.component';
 import { OutputPropertyComponent } from './output-property/output-property.component';
 import { LiveClycleComponent } from './live-clycle/live-clycle.component';
+import { DirectiveNgClassComponent } from './directive-ng-class/directive-ng-class.component';
+import { DirectiveNgStyleComponent } from './directive-ng-style/directive-ng-style.component';
+import { ExempleNgContentComponent } from './exemple-ng-content/exemple-ng-content.component';
+import { YellowBackgroundDirective } from './shared/yellow-background.directive';
+import { CustomDirectivesComponent } from './custom-directives/custom-directives.component';
+import { HightlightDirective } from './shared/hightlight.directive';
+import { HightlightMouseDirective } from './shared/hightlight-mouse.directive';
 
 @NgModule({
   declarations: [
@@ -24,7 +32,14 @@ import { LiveClycleComponent } from './live-clycle/live-clycle.component';
     EventBindingComponent,
     TwoWayDataBindingComponent,
     OutputPropertyComponent,
-    LiveClycleComponent
+    LiveClycleComponent,
+    DirectiveNgClassComponent,
+    DirectiveNgStyleComponent,
+    ExempleNgContentComponent,
+    YellowBackgroundDirective,
+    CustomDirectivesComponent,
+    HightlightDirective,
+    HightlightMouseDirective
   ],
   imports: [
     BrowserModule,
@@ -34,7 +49,8 @@ import { LiveClycleComponent } from './live-clycle/live-clycle.component';
     InputPropertyModule,
     MatIconModule,
     MatButtonModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
