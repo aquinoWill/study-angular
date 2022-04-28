@@ -24,6 +24,7 @@ import { YellowBackgroundDirective } from './shared/yellow-background.directive'
 import { CustomDirectivesComponent } from './custom-directives/custom-directives.component';
 import { HightlightDirective } from './shared/hightlight.directive';
 import { HightlightMouseDirective } from './shared/hightlight-mouse.directive';
+import { NgElseDirective } from './shared/ng-else.directive';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { HightlightMouseDirective } from './shared/hightlight-mouse.directive';
     YellowBackgroundDirective,
     CustomDirectivesComponent,
     HightlightDirective,
-    HightlightMouseDirective
+    HightlightMouseDirective,
+    NgElseDirective
   ],
   imports: [
     BrowserModule,
